@@ -1,0 +1,247 @@
+body{
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/dd/2e/e8/dd2ee843d9ef1ab8b786d2a4c37574ed.jpg);
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-color: black;
+	border-bottom: 4px solid #DCC16F;
+	z-index: 1000;
+	top: 0; left: 0; right: 0;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+	box-shadow: 10px 10px 33px -3px rgba(0,0,0,0.41);
+}
+
+#nav li{
+	display: inline;
+
+}
+#nav li a{
+	text-decoration: none;
+	color: #DCC16F;
+	display: inline-block;
+	margin: 0 3em;
+	font-family: 'News Cycle', sans-serif;
+	text-align: center;
+	padding-top: 3vh;
+}
+#nav a:hover{
+	font-size: 18px;
+	color: #F3D46B;
+	text-shadow: 0 0 5px #fff;
+	transition: all 1s;
+}
+#nav img{
+	float: left;
+	padding-bottom: 25px;
+}
+#personnages{
+	background-image: url(http://www.my-hd-wallpapers.fr/download.php?wallpaper=1389718218&dwn=wall/1389718218_classic-background-stone.jpg);
+	background-size: cover;
+}
+#persos{
+	background-image: url(http://jardinsduciel.j.a.pic.centerblog.net/48eef78a.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1150px;
+	width: 1500px;
+	margin-top: 50px;
+}
+#persos h1{
+	color: white;
+	font-family: 'News Cycle', sans-serif;
+}
+#persos img{
+	overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:90px;
+}
+.ligne1{
+	display: flex;
+	padding-top: 130px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	justify-content: space-around;
+}
+.ligne2{
+	display: flex;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	justify-content: space-around;
+}
+.ligne3{
+	display: flex;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	justify-content: space-around;
+}
+.ligne4{
+	display: flex;
+	margin-left: 100px;
+	justify-content: space-around;
+}
+.containerGaleri{
+	margin: 4% auto;
+	width: 310px;
+	height: 37vh;
+	position: relative;
+	perspective: 1000;
+	margin-top: 80px;
+}
+#galeri{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 30s infinite linear;
+	margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+#galeri:hover{
+	animation-play-state: paused;
+}
+#galeri figure{
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 140px;
+	top: 20px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px black;
+}
+#galeri figure:nth-child(1){transform: rotateY(0deg) translateZ(388px);}
+#galeri figure:nth-child(2) { transform: rotateY(40deg) translateZ(388px);}
+#galeri figure:nth-child(3) { transform: rotateY(80deg) translateZ(388px);}
+#galeri figure:nth-child(4) { transform: rotateY(120deg) translateZ(388px);}
+#galeri figure:nth-child(5) { transform: rotateY(160deg) translateZ(388px);}
+#galeri figure:nth-child(6) { transform: rotateY(200deg) translateZ(388px);}
+#galeri figure:nth-child(7) { transform: rotateY(240deg) translateZ(388px);}
+#galeri figure:nth-child(8) { transform: rotateY(280deg) translateZ(388px);}
+#galeri figure:nth-child(9) { transform: rotateY(320deg) translateZ(388px);}
+
+#imgGaleri{
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+#imgGaleri:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	overflow:auto;
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 8%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+#skins{
+	background-image: url(http://www.gamersdecide.com/sites/default/files/authors/u140344/star_guardian_jinx_lux_janna_lulu_poppy.jpg);
+	background-size: cover;
+}
+#reseaux{
+	background-image: url(https://images4.alphacoders.com/600/thumb-1920-600528.png);
+	background-size: cover;
+}
+#imgReseaux{
+	 display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 100px;
+}
+#imgReseaux img{
+	padding-top: 20px;
+
+}
+#imgReseaux img:hover{
+	-webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#actualité{
+	background-image: url(http://i.imgur.com/zOfiyZ5.jpg);
+	background-size: cover;
+}
+#cadreActu{
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 600px;
+	padding: 4%;
+	background-image: url(http://www.renders-graphiques.fr/image/upload/normal/Noel_bleu_15.png);
+	background-size: cover;
+}
+#cadreActu p{
+	color:white;
+	font-family: 'News Cycle', sans-serif;
+	padding-left: 30px;
+}
+#cadreActu h1{
+	color: white;
+	font-family: 'News Cycle', sans-serif;
+	padding-left: 30px;
+}
+ 
+   @-webkit-keyframes flash {
+  0%, 50%, 100% {
+  opacity: 1;
+  }
+  
+  25%, 75% {
+  opacity: 0;
+  }
+  }
+  
+  @keyframes flash {
+  0%, 50%, 100% {
+  opacity: 1;
+  }
+  
+  25%, 75% {
+  opacity: 0;
+  }
+  } 
+×
